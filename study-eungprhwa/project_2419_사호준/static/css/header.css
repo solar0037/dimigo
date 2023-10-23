@@ -1,0 +1,125 @@
+/* header */
+/* searchbar */
+.searchbar-wrap {
+  display: flex;
+  align-items: flex-start;
+  width: 650px;
+  height: 50px;
+}
+
+.searchbar-wrap .gg-shopping-cart {
+  margin-right: 10px;
+}
+
+.searchbar-wrap .gg-search {
+  margin-left: 8px;
+}
+
+.searchbar {
+  width: 550px;
+  height: 50px;
+  font-size: 20px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50px;
+  padding-left: 25px;
+}
+
+/* .searchbar-logo {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 25px;
+  text-align: center;
+  background-image: url(../images/board_boy.png);
+} */
+
+/* shopping cart icon */
+.gg-shopping-cart {
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+  transform: scale(var(--ggs,1));
+  width: 40px;
+  height: 42px;
+  background:
+  linear-gradient(
+  to left,currentColor 24px,
+  transparent 0)
+  no-repeat -2px 12px/36px 4px,
+  linear-gradient(
+  to left,currentColor 24px,
+  transparent 0)
+  no-repeat 12px 28px/22px 4px,
+  linear-gradient(
+  to left,currentColor 24px,
+  transparent 0)
+  no-repeat 0 4px/8px 4px,
+  radial-gradient(
+  circle,currentColor 60%,
+  transparent 40%)
+  no-repeat 24px 34px/8px 8px,
+  radial-gradient(
+  circle,currentColor 60%,
+  transparent 40%)
+  no-repeat 12px 34px/8px 8px
+}
+
+.gg-shopping-cart::after,
+.gg-shopping-cart::before {
+  content: "";
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  width: 4px;
+  height: 28px;
+  background: currentColor;
+  top: 4px;
+  left: 8px;
+  transform: skew(12deg)
+}
+
+.gg-shopping-cart::after {
+  height: 20px;
+  top: 12px;
+  left: 32px;
+  transform: skew(-12deg)
+}
+
+/* search icon */
+.gg-search {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 32px;
+  height: 32px;
+  border: 4px solid;
+  border-radius: 100%;
+  /* margin-left: -8px; */
+  /* margin-top: -8px; */
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+.gg-search::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  border-radius: 6px;
+  width: 4px;
+  height: 16px;
+  background: currentColor;
+  transform: rotate(-45deg);
+  top: 20px;
+  left: 24px
+}
+
+/* icon with a tag */
+.gg-shopping-cart:link,
+.gg-shopping-cart:visited,
+.gg-search:link,
+.gg-search:visited {
+  color: black;
+}

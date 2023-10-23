@@ -1,0 +1,25 @@
+.item-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-left: 0px;
+  border: 1px solid black;
+  width: 800px;
+}
+
+.item-wrap {
+  display: inline;
+  border: 1px solid black;
+}
+
+.item-wrap img {
+  width: 100px;
+  height: 100px;
+  float: left;
+  border-right: 1px solid black;
+}
+
+.item-wrap .item-desc-wrap {
+  float: right;
+  /* border-left: 1px solid black; */
+}

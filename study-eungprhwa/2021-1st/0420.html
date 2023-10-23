@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fn_evt(v) {
+            alert(document.getElementById("txtPwd").value);
+        }
+        function fn_chkval(v) {
+            alert(v.max);
+        }
+    </script>
+</head>
+<body>
+
+<form action="search.html">
+    <input type="hidden" id="hddTextField1" value="22"><br>
+    <label>이름: <input type="text" id="txtTextBox1" value="2" size="50" maxlength="10"></label><br>
+    패스워드: <input type="password" id="txtPwd" size="50" maxlength="10"><br>
+    찾기: <input type="search"><br>
+    url: <input type="url"><br>
+    email: <input type="email"><br>
+    number: <input type="number" min="0" max="10" onkeyup="fn_chkval(this);"><br>
+
+    <input type="range" name="slider" for="result" oninput="result.value=slider.value"><br>
+    <input class="result" name="result" for="slider" oninput="slider.value=result.value"><br>
+    
+    <input type="submit" value="폼전송"><br>
+    <input type="button" value="클릭이다" onclick="fn_evt();"><br>
+</form>
+
+</body>
+</html>
