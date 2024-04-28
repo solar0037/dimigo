@@ -1,0 +1,9 @@
+/2020_1st/.vs
+/2020_1st/2020_1st.sln
+
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
+*.exe
+*.out

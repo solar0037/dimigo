@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form>
+    아이디: <input type="text" minlength="4" placeholder="아이디를 4자리 이상 입력하세요"><br>
+    패스워드: <input type="password" placeholder="비밀번호도 입력하세요"><br>
+    이름: <input type="text" required size="10" maxlength="5"><br>
+    전화번호: <input type="text" readonly value="값을넣어준다"><br>
+    이메일: <input type="text"><br>
+
+    <select>
+        <optgroup label="국산과일">
+            <option value="f01">수박</option>
+            <option value="f02" selected>포도</option>
+            <option value="f03">복숭아</option>
+            <option value="f04">사과</option>
+            <option value="f05">딸기</option>
+        </optgroup>
+        <optgroup label="수입과일">
+            <option value="f06">바나나</option>
+            <option value="f07">두리안</option>
+            <option value="f08">키위</option>
+            <option value="f09">리치</option>
+            <option value="f10">망고</option>
+        </optgroup>
+    </select>
+    
+    <input type="text" list="aaaa">
+    <datalist id="aaaa">
+        <option>라면</option>
+        <option>떡볶이</option>
+        <option>순대</option>
+        <option>튀김</option>
+        <option>오뎅</option>
+        <option>민초</option>
+    </datalist>
+    <br><br><br><br>
+
+    <textarea cols="500" rows="100">
+    </textarea>
+
+    <input type="submit" value="전송">
+
+</form>
+
+<form oninput="result.value = parseInt(num1.value) + parseInt(num2.value)">
+    <input type="number" name="num1" value="0"> +
+    <input type="number" name="num2" value="0"> =
+    <output name="result"></output>
+</form>
+
+<progress value="10" max="100"></progress>
+
+</body>
+</html>

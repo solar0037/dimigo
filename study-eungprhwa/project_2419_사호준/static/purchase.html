@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/purchase.css">
+  <title>결제</title>
+</head>
+<body>
+  <header></header>
+  <nav></nav>
+  <main>
+    <article id="container">
+      <section class="purchase-title">
+        <strong>구매하기</strong>
+        <p>구매하려는 상품을 확인해 주세요.</p>
+      </section>
+      <section class="purchase-content">
+        <ul class="purchase-list">
+          <li class="item">
+            <a href="./product.html"><img src="./images/board_boy.png" alt="준비중"></a>
+            <div class="item-desc">
+              <strong>AAA상품</strong>
+            </div>
+          </li>
+          <li class="item">
+            <a href="./product.html"><img src="./images/book_read.png" alt="준비중"></a>
+            <div class="item-desc">
+              <strong>BBB상품</strong>
+            </div>
+          </li>
+          <li class="item">
+            <a href="./product.html"><img src="./images/bookbg.png" alt="준비중"></a>
+            <div class="item-desc">
+              <strong>CCC상품</strong>
+            </div>
+          </li>
+        </ul>
+        <div class="purchase-menu">
+          <div class="purchase-opt-1">
+            <p>부재 시</p>
+            <select name="" id="">
+              <option value="door">현관 옆</option>
+              <option value="officer-room">경비실</option>
+            </select>
+          </div>
+          <div class="purchase-opt-2">
+            <p>결제 방법</p>
+            <select name="" id="">
+              <option value="card">카드</option>
+              <option value="money">현금</option>
+            </select>
+          </div>
+          <div class="purchase-button">
+            <button onclick="alert('정상적으로 결제되었습니다.'); window.location.href='index.html';">구매하기</button>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer></footer>
+  <script src="./js/jquery-3.2.1.min.js"></script>
+  <script src="./js/includeHTML.js"></script>
+</body>
+</html>

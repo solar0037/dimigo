@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function chk() {
+            var obj = document.getElementsByName("radio1");
+            for (i=0; i<=obj.length; i++) {
+                alert(obj[i].value + ":" + obj[i].checked);
+            }
+        }
+    </script>
+</head>
+<body>
+<form action="server.php" method="POST">
+    국어 <input type="radio" name="radio1" value="ko"><br>
+    영어 <input type="radio" name="radio1" value="en"><br>
+    수학 <input type="radio" name="radio1" value="ma"><br>
+    과학 <input type="radio" name="radio1" value="sc"><br>
+    <hr>
+    응화 <input type="checkbox" name="chk2" value="ad"><br>
+    정통 <input type="checkbox" name="chk2" value="ic"><br>
+    빅데 <input type="checkbox" name="chk2" value="bd"><br>
+    정보 <input type="checkbox" name="chk2" value="if"><br>
+    <hr>
+
+    <input type="color" id="color"><br>
+
+    <input type="date" id="date"><br>
+    <input type="month" id="month"><br>
+    <input type="week" id="week"><br>
+
+
+    <br>
+
+    <input type="time" id="time"><br>
+    <input type="datetime" id="datetime"><br>
+    <input type="datetime-local" id="datetime-local"><br>
+
+    <input type="button" value="file1체크" onclick="alert(document.getElementById('time').value);">
+    <input type="button" value="값체크" onclick="alert(document.getElementById('datetime').value);">
+    <input type="button" value="값체크" onclick="alert(document.getElementById('datetime-local').value);">
+
+    <input type="file" id="file1"><br>
+
+    <input type="button" id="button" value="button"><br>
+    <input type="submit" id="submit1" value="submit"><br>
+    <input type="image" id="imgbutton" src="menu1.jpg"><br>
+
+</form>
+</body>
+</html>
